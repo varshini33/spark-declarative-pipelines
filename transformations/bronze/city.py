@@ -3,7 +3,7 @@ from pyspark.sql.functions import col, current_timestamp
 from pyspark.sql.functions import md5, concat_ws, sha2
 
 #configuration
-SOURCE_PATH = "s3://goodcabs-hamz/data-store/city"
+SOURCE_PATH = "<s3-path>"
 
 @dp.materialized_view(
     name="transportation.bronze.city",
